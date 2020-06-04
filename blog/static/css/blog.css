@@ -2,11 +2,12 @@
     background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    height:200px
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page_header h1 a:active{
     color: #ffffff;
-    font-size: 36pt;
+    font-size: 72pt;
     text-decoration: none;
 }
 
@@ -35,6 +36,8 @@ h1, h2, h3, h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+    margin-bottom: 20px;
+
 }
 
 .post {
