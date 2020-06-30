@@ -43,7 +43,7 @@ def read_file(request):
     aboutfile=open('/home/samogonovsky/samogonovsky.pythonanywhere.com/blog/about.txt', 'r')
     content=aboutfile.read()
     aboutfile.close()
-    return render(request, 'about.html', {'content': content})
+    return render(request, '/home/samogonovsky/samogonovsky.pythonanywhere.com/blog/templates/blog/about.html', {'content': content})
 
 
 
