@@ -1,18 +1,20 @@
 .page-header {
-    background-color: #f03c3c;
+    background-color: #2d545e;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
-    height:200px
+    
+    padding: 20px 0px 20px 0px;
+    height:232px
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page_header h1 a:active{
     color: #ffffff;
+    padding: 20px 20px 20px 40px;
     font-size: 72pt;
     text-decoration: none;
 }
 
 body {
-    background-color: #edd48e;
+    background-color: #e1b382;
 }
 
 .content {
@@ -36,6 +38,38 @@ p {
     src: url('../fonts/Raleway-Regular.ttf') format("truetype");
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d545e;
+}
+
+li{
+    float: left;
+    border-right: 1px solid #ffffff;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    background-color: #12343b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    color: #ffffff;
+    background-color: #2d545e;
+}
+
+/*.navbar-element {
+    display: block;
+    padding: 8px;
+    
+}*/
+
 .date {
     color: #828282;
 }
@@ -53,7 +87,7 @@ p {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 
 }
 
