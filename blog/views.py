@@ -40,7 +40,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 def read_file(request):
-    aboutfile=open('my-first-blog/blog/about.txt', 'r')
+    aboutfile=open('/home/samogonovsky/samogonovsky.pythonanywhere.com/blog/about.txt', 'r')
     content=aboutfile.read()
     aboutfile.close()
     return render(request, 'about.html', {'content': content})
