@@ -40,10 +40,10 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 def read_file(request):
-    aboutfile=open('about.txt', 'r')
+    aboutfile=open('blog/about.txt', 'r')
     content=aboutfile.read()
     aboutfile.close()
-    return remder(request, 'blog/about.html', context)
+    return render(request, 'blog/about.html', {'content': content})
 
 
 
