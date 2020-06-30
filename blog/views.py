@@ -39,6 +39,11 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
-    
+def read_file(request):
+    aboutfile=open('about.txt', 'r')
+    content=aboutfile.read()
+    aboutfile.close()
+    return remder(request, 'blog/about.html', context)
+
 
 
