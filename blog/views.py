@@ -23,7 +23,7 @@ def post_new(request):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'my-first-blog/blog/post_edit.html', {'form': form})
+    return render(request, 'blog/post_edit.html', {'form': form})
 
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -40,10 +40,10 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 def read_file(request):
-    aboutfile=open('blog/about.txt', 'r')
+    aboutfile=open('my-first-blog/blog/about.txt', 'r')
     content=aboutfile.read()
     aboutfile.close()
-    return render(request, 'blog/about.html', {'content': content})
+    return render(request, 'about.html', {'content': content})
 
 
 
