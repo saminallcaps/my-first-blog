@@ -43,6 +43,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    border-top: 1px solid #ffffff;
     background-color: #2d545e;
 }
 
